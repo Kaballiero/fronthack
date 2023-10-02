@@ -1,0 +1,42 @@
+.pattern {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 70%;
+  margin-left: 10px;
+  height: 90%;
+  min-height: 610px;
+  border-radius:0;
+  padding: 25px 45px; 
+  background: var(--secondary-color);
+  overflow-y: scroll;
+}
+.pattern_add {
+  margin: 20px;
+  box-sizing: border-box;
+  width: 150px;
+  height: 150px;
+  flex-shrink: 0;
+  border-radius: 35px;
+  background: #d9d9d9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+.btn {
+  flex-shrink: 0;
+  cursor: pointer;
+  border: 0;
+  background: local;
+}
+.label {
+  color: #000;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

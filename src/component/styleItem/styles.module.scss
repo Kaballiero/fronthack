@@ -1,0 +1,39 @@
+.item{
+  width: 20%;
+  height: 15%;
+  margin: 0 15px 15px 0;
+  &_color {
+  min-width: 160px;
+  min-height: 100px;
+  
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  border: 2px solid var(--primary-color);
+  background: var(
+    --main-theme,
+    linear-gradient(133deg, #6ebaff 58.29%, #f0f6ff 58.3%)
+  );}
+  &_name{
+    color: #000;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-align: center;
+    width: 100%;
+    margin-top: -20px;
+  }
+  &_check{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    position: relative;
+    bottom: 30px;
+    right: 10px;
+  }
+}
+.hide{
+  overflow: hidden;
+}

@@ -16,9 +16,9 @@ const getStyle=(index:number)=>{
 }
 
 const opportunitiesMap= [
-    {opportunitie:"opportunitie",text:"text"},
-    {opportunitie:"opportunitie",text:"text"},
-    {opportunitie:"opportunitie",text:"text"}
+    {opportunitie:"Возможность 1",text:"Добрый день!  Вас приветствует система семантической обработки текста. В данном окне вы можете протестировать основные её  возможности, просто отправив описание..."},
+    {opportunitie:"Возможность 2",text:"Добрый день!  Вас приветствует система семантической обработки текста. В данном окне вы можете протестировать основные её  возможности, просто отправив описание..."},
+    {opportunitie:"Возможность 3",text:"Добрый день!  Вас приветствует система семантической обработки текста. В данном окне вы можете протестировать основные её  возможности, просто отправив описание..."}
 ]
 
 const rateMap= [
@@ -62,8 +62,8 @@ return(
             Вас приветствует система семантической обработки текста.
             В данном окне вы можете протестировать основные её  возможности, просто отправив описание...
             </h1>
-            {opportunitiesMap.map(opportuniti=>
-                <div className={styles.opportuniti}>
+            {opportunitiesMap.map((opportuniti,idx)=>
+                <div key={idx} className={styles.opportuniti} >
                 <h1 className={styles.opportuniti_name}>{opportuniti.opportunitie}</h1>
                 <h1 className={styles.opportuniti_description}>{opportuniti.text}</h1>
                 </div>
@@ -76,11 +76,11 @@ return(
         <p className={styles.title}>Выберите СВОЙ тарифный план:</p>
         <div className={styles.rate_plans}>
             {rateMap.map((plan,index)=>
-            <div className={classNames(styles.plan, getStyle(index))}> 
+            <div key={index} className={classNames(styles.plan, getStyle(index))}> 
             <p className={styles.plan_name}>{plan.name}</p> 
                 <div className={styles.plan_conditions}>
                 <ul className={styles.conditions_list}>
-                    {plan.property.map(prop=><li className={styles.conditions_list_item}>{prop}</li>)}
+                    {plan.property.map((prop,index)=><li key={index} className={styles.conditions_list_item}>{prop}</li>)}
                 </ul>
             
             <p className={styles.plan_price}>{plan.price} руб/мес</p>    

@@ -1,0 +1,108 @@
+.info {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 93%;
+    height: 90%;
+    border-radius: 0 15px 15px 15px;
+    border: 2px solid var(--primary-color);
+    border-top: 0;
+    padding: 25px 45px;
+    background: var(--secondary-color);
+  }
+  .form {
+    &_label {
+      box-sizing: border-box;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+      margin: 0 0 15px 0;
+    }
+  
+    &_input {
+      box-sizing: border-box;
+      padding: 5px 15px;
+      border: 0;
+      border-bottom: 2px solid var(--primary-color);
+  
+      width: 100%;
+      font-family: Montserrat;
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 24px;
+      letter-spacing: 0em;
+      text-align: left;
+  
+      color: #000000;
+  
+      &_short {
+        box-sizing: border-box;
+        padding: 5px 15px;
+        border: 0;
+        border-bottom: 2px solid var(--primary-color);
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+        width: 100%;
+      }
+      &_large {
+        box-sizing: border-box;
+        padding: 5px 15px;
+        border: 0;
+        border-bottom: 2px solid var(--primary-color);
+  
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 24px;
+        letter-spacing: 0em;
+        text-align: left;
+        color: #000000;
+  
+        height: 90%;
+        width: 100%;
+      }
+    }
+    &_input:focus,
+    &_input_large:focus,
+    &_input_short:focus {
+      outline: none;
+      color: #000000;
+    }
+  
+    &_info {
+      height: 50%;
+    }
+    &_contacts {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+    }
+    &_email {
+      box-sizing: border-box;
+      width: 50%;
+      margin-right: 15px;
+    }
+    &_phone {
+      box-sizing: border-box;
+      width: 50%;
+      margin-left: 15px;
+    }
+    &_btn {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      padding: 10px 20%;
+      align-items: flex-end;
+      
+    }
+  }

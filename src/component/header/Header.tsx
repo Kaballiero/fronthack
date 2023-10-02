@@ -15,7 +15,7 @@ const Header = () =>{
                     <Link to="/">Главная</Link>
                 </p>
                 <p className={styles.menu_link}>
-                    <Link to="/user/lk">Личный кабинет</Link>
+                    <Link to="/lk/info">Личный кабинет</Link>
                 </p>
                 <p className={styles.menu_link}>
                     <Link to="/contact">О нас</Link>

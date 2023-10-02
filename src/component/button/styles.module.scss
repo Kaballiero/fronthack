@@ -1,0 +1,37 @@
+.btn {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px 20%;
+  align-items: flex-end;
+
+  &_agree {
+    height: 43px;
+    width: 40%;
+    border: 0;
+    color: #ffffff;
+    border-radius: 10px;
+    background: var(--primary-color);
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+  &_disagree {
+    height: 43px;
+    width: 40%;
+    border: 0;
+    color: #ffffff;
+    border-radius: 10px;
+    background: #ff8888;
+    font-family: Montserrat;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: center;
+  }
+}
