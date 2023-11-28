@@ -1,46 +1,69 @@
-# Getting Started with Create React App
+# YAVAER
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Введение
 
-## Available Scripts
+Проект построен с использованием React и TypeScript для предоставления удобного пользовательского интерфейса для генерации текста и ответов на вопросы с использованием семантической модели.
 
-In the project directory, you can run:
+## Начало работы
 
-### `npm start`
+Прежде чем запустить проект, убедитесь, что у вас установлены Node.js и npm на вашем компьютере.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+1. Клонируйте репозиторий:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+   ```bash
+   git clone https://github.com/ваше-имя/yavaer.git
+   ```
 
-### `npm test`
+2. Перейдите в директорию проекта:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   cd yavaer
+   ```
 
-### `npm run build`
+3. Установите зависимости:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm install
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Доступные скрипты
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+В директории проекта вы можете использовать следующие скрипты:
 
-### `npm run eject`
+- `npm start`: Запускает приложение в режиме разработки.
+- `npm build`: Собирает приложение для продакшена в папку `build`.
+- `npm test`: Запускает тестовый раннер.
+- `npm eject`: Извлекает приложение из конфигурации Create React App.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## Зависимости
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+YAVAER зависит от следующих ключевых библиотек:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **@reduxjs/toolkit**: Toolkit Redux для управления состоянием.
+- **@testing-library/jest-dom**, **@testing-library/react**, **@testing-library/user-event**: Утилиты для тестирования.
+- **classnames**: Утилита для условного объединения имен классов.
+- **prettier**: Форматтер кода для обеспечения согласованного стиля кода.
+- **react**, **react-dom**: Основные библиотеки для создания пользовательских интерфейсов.
+- **react-router-dom**: Декларативная маршрутизация для приложений React.
+- **react-scripts**: Скрипты и конфигурация, используемые Create React App.
+- **sass**: Препроцессор CSS для стилизации.
+- **typescript**: Типизированный надмножество JavaScript для улучшенного опыта разработки.
+- **web-vitals**: Библиотека для измерения веб-показателей.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Структура Кода
 
-## Learn More
+- **src/components**: Содержит компоненты React, используемые в приложении.
+- **src/pages**: Содержит отдельные страницы приложения.
+- **src/redux**: Управляет хранилищем Redux, действиями и редукторами.
+- **src/styles**: Содержит глобальные стили и файлы SCSS.
+- **src/utils**: Включает в себя вспомогательные функции и вспомогательные файлы.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Конфигурация Docker
+Если вы предпочитаете использовать Docker, вы можете создать Docker-образ и запустить контейнер^
+```
+# Сборка Docker-образа
+docker build -t yavaer-frontend .
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Запуск контейнера
+docker run -p 3000:3000 yavaer-frontend
+```
